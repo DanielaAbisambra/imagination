@@ -55,7 +55,7 @@ import base64
 
 
 #Subir excel desde streamlit
-st.title("Imagination P&G", anchor=None)
+st.title("Imagination", anchor=None)
 #st.set_page_config(page_title="Imagination", page_icon="TriquiIcon.png", layout="centered", initial_sidebar_state="auto", menu_items=None)
 
 
