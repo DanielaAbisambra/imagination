@@ -135,7 +135,7 @@ if resultado == True:
         # Si es Tipo 1
         if tipo ==1:
         
-            im = Image.open("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fotos sin Fondo/"+ str(int(ean1)) +".jpg")
+            im = Image.open("./imagenes/"+ str(int(ean1)) +".jpg")
             im1 = im.resize((550,550))
             
             dst = Image.new('RGB', (800, 800), (255,255,255))
@@ -145,7 +145,7 @@ if resultado == True:
             draw = ImageDraw.Draw(img)
             draw_point = (100, 0)
              
-            font = ImageFont.truetype("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fonts/BebasNeue-Regular.ttf",70)
+            font = ImageFont.truetype("./BebasNeue-Regular.ttf",70)
             draw.text(draw_point, comunic, font=font, fill= colorx, align = 'center')
             
             text_window = img.getbbox()
@@ -174,10 +174,10 @@ if resultado == True:
         elif tipo ==2 :
             
             ean2 = int(ean2)
-            im = Image.open("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fotos sin Fondo/"+ str(int(ean1)) +".jpg")
+            im = Image.open("./imagenes/"+ str(int(ean1)) +".jpg")
             im1 = im.resize((300,300))
             
-            im = Image.open("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fotos sin Fondo/"+ str(int(ean2)) +".jpg")
+            im = Image.open("./imagenes/"+ str(int(ean2)) +".jpg")
             im2 = im.resize((300,300))
         
             dst = Image.new('RGB', (800, 800), (255,255,255))
@@ -188,7 +188,7 @@ if resultado == True:
             draw = ImageDraw.Draw(img)
             draw_point = (100, 0)
             
-            font = ImageFont.truetype("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fonts/BebasNeue-Regular.ttf",70)
+            font = ImageFont.truetype("./BebasNeue-Regular.ttf",70)
             draw.text(draw_point, comunic, font=font, fill= colorx, align = 'center')
             
             text_window = img.getbbox()
@@ -219,13 +219,13 @@ if resultado == True:
             
             ean2 = int(ean2)
             ean3 = int(ean3)
-            im = Image.open("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fotos sin Fondo/"+ str(int(ean1)) +".jpg")
+            im = Image.open("./imagenes/"+ str(int(ean1)) +".jpg")
             im1 = im.resize((250,250))
             
-            im = Image.open("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fotos sin Fondo/"+ str(int(ean2)) +".jpg")
+            im = Image.open("./imagenes/"+ str(int(ean2)) +".jpg")
             im2 = im.resize((250,250))
             
-            im = Image.open("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fotos sin Fondo/"+ str(int(ean3)) +".jpg")
+            im = Image.open("./imagenes/"+ str(int(ean3)) +".jpg")
             im3 = im.resize((250,250))
             
             dst = Image.new('RGB', (800, 800), (255,255,255))
@@ -237,7 +237,7 @@ if resultado == True:
             draw = ImageDraw.Draw(img)
             draw_point = (100, 0)
             
-            font = ImageFont.truetype("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fonts/BebasNeue-Regular.ttf",70)
+            font = ImageFont.truetype("./BebasNeue-Regular.ttf",70)
             draw.text(draw_point, comunic, font=font, fill=colorx, align = 'center')
             
             text_window = img.getbbox()
@@ -269,18 +269,18 @@ if resultado == True:
             ean2 = int(ean2)
             ean3 = int(ean3)
             ean4 = int(ean4)
-            im = Image.open("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fotos sin Fondo/"+ str(int(ean1)) +".jpg")
+            im = Image.open("./imagenes/"+ str(int(ean1)) +".jpg")
             im1 = im.resize((250,250))
             
-            im = Image.open("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fotos sin Fondo/"+ str(int(ean2)) +".jpg")
+            im = Image.open("./imagenes/"+ str(int(ean2)) +".jpg")
             im2 = im.resize((250,250))
         
             
-            im = Image.open("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fotos sin Fondo/"+ str(int(ean3)) +".jpg")
+            im = Image.open("./imagenes/"+ str(int(ean3)) +".jpg")
             im3 = im.resize((250,250))
         
             
-            im = Image.open("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fotos sin Fondo/"+ str(int(ean4)) +".jpg")
+            im = Image.open("./imagenes/"+ str(int(ean4)) +".jpg")
             im4 = im.resize((250,250))
             
             dst = Image.new('RGB', (800, 800), (255,255,255))
@@ -293,7 +293,7 @@ if resultado == True:
             draw = ImageDraw.Draw(img)
             draw_point = (150, 0)
         
-            font = ImageFont.truetype("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Fonts/BebasNeue-Regular.ttf",70)
+            font = ImageFont.truetype("./BebasNeue-Regular.ttf",70)
             draw.text(draw_point, comunic, font=font, fill= colorx, align = 'center')
         
             text_window = img.getbbox()
