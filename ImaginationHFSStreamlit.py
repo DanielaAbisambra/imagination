@@ -49,6 +49,15 @@ import base64
 
 #state = get_state()
 
+#Template ejemplo
+def download_excel():
+    with open('Input Imagination.xlsx', 'rb') as f:
+        bytes_data = f.read()
+    st.download_button(label='Template Excel', data=bytes_data, file_name='Input Imagination.xlsx')
+
+# Display the button on Streamlit app
+download_excel()
+
 
 
 #dfpromos = pd.read_excel("C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project\Tabla de Entrada Imagination2.xlsx")
