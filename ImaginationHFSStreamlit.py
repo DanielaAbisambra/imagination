@@ -49,6 +49,9 @@ import base64
 
 #state = get_state()
 
+#Titulo pagina
+st.title("Imagination", anchor=None)
+
 #Template ejemplo
 def download_excel():
     with open('Input Imagination.xlsx', 'rb') as f:
@@ -64,12 +67,12 @@ download_excel()
 
 
 #Subir excel desde streamlit
-st.title("Imagination", anchor=None)
+
 #st.set_page_config(page_title="Imagination", page_icon="TriquiIcon.png", layout="centered", initial_sidebar_state="auto", menu_items=None)
 
 
 #Importo el excel subido con rutero
-dataset = st.file_uploader("Cargue maestra de combos con columnas: PLU, Descripcion, EAN1, EAN2, EAN3, EAN4, Comunicacion, Disclaimer ", type = ['xlsx'])
+dataset = st.file_uploader("Cargue maestra de combos siguiendo el template: ", type = ['xlsx'])
 if dataset is not None:
     dfpromos = pd.read_excel(dataset)
     st.sidebar.write(' ### Rows and Columns:',dfpromos.shape)
