@@ -95,18 +95,25 @@ opciones = st.text_input("Seleccione su color de Preferencia: azul, negro, naran
 #st.write('You selected:', opciones)
 if opciones== "":
     colorx= gris
+    colorname = "gris"
 elif opciones=="naranja":
     colorx=naranja
+    colorname = "naranja"
 elif opciones=="negro":
     colorx=negro
+    colorname = "negro"
 elif opciones=="gris":
     colorx=gris
+    colorname = "gris"
 elif opciones=="azul":
     colorx=azul
+    colorname = "azul"
 elif opciones=="rosado":
     colorx=rosado
+    colorname = "rosado"
 elif opciones=="amarillo":
     colorx=amarillo
+    colorname = "amarillo"
 
 
 #Agrego el Boton de generar    
