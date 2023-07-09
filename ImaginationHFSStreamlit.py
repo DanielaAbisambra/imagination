@@ -124,12 +124,16 @@ if resultado == True:
         ean2 = dfpromos.iloc[i,3]
         ean3 = dfpromos.iloc[i,4]
         ean4 = dfpromos.iloc[i,5]
-        comunic = dfpromos.iloc[i,6]
-        disc = dfpromos.iloc[i,7]
+        q1 = str(dfpromos.iloc[i,6])
+        q2 = str(dfpromos.iloc[i,7])
+        q3 = str(dfpromos.iloc[i,8])
+        q4 = str(dfpromos.iloc[i,9])
+        comunic = dfpromos.iloc[i,10]
+        disc = dfpromos.iloc[i,11]
         
         
         #Path para guardar el output
-        outpath = "C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Output"
+        #outpath = "C:/Users/abisambra.d/OneDrive - Procter and Gamble/HFS SDO/Rocks/Digital/Fase 3/Imagination Project/Output"
         
         #Se identifica el tipo de promo con la que se está lidiando
         
@@ -152,7 +156,14 @@ if resultado == True:
             
             dst = Image.new('RGB', (800, 800), (255,255,255))
             dst.paste(im1, (100, 50))
+
+            #Agrego cantidad
         
+            if len(q1) >= 1:
+                imq11 = Image.open("./"+ colorname + "/" + str(int(float(q1))) +".png").convert("RGBA")
+                imq11 = imq11.resize((180,180))
+                dst.paste(imq11, (550, 50), imq11)
+                
             img = Image.new("RGBA", (800, 120), color="white")
             draw = ImageDraw.Draw(img)
             draw_point = (100, 0)
@@ -195,7 +206,19 @@ if resultado == True:
             dst = Image.new('RGB', (800, 800), (255,255,255))
             dst.paste(im1, (100, 150))
             dst.paste(im2, (im1.width+100, 150))
-        
+
+            #Agrego cantidad1
+            if len(q1) >= 1:
+                imq11 = Image.open("./"+ colorname + "/" + str(int(float(q1))) +".png").convert("RGBA")
+                imq11 = imq11.resize((150,150))
+                dst.paste(imq11, (350, 50), imq11)
+            
+            #Agrego cantidad2
+            if len(q2) >= 1:
+                imq12 = Image.open("./"+ colorname + "/" + str(int(float(q2))) +".png").convert("RGBA")
+                imq12 = imq12.resize((150,150))
+                dst.paste(imq12, (650, 50), imq12)
+            
             img = Image.new("RGBA", (800, 120), color="white")
             draw = ImageDraw.Draw(img)
             draw_point = (100, 0)
@@ -244,7 +267,26 @@ if resultado == True:
             dst.paste(im1, (150, 100))
             dst.paste(im2, (im1.width+150, 100))
             dst.paste(im3, (int(im1.width/2)+150,im1.height+100))
+
+            #Agrego cantidad1
+            if len(q1) >= 1:
+                imq11 = Image.open("./"+ colorname + "/" + str(int(float(q1))) +".png").convert("RGBA")
+                imq11 = imq11.resize((130,130))
+                dst.paste(imq11, (300, 50), imq11)
         
+        #Agrego cantidad2
+            if len(q2) >= 1:
+                imq12 = Image.open("./"+ colorname + "/" + str(int(float(q2))) +".png").convert("RGBA")
+                imq12 = imq12.resize((130,130))
+                dst.paste(imq12, (580, 50), imq12)
+        
+        #Agrego cantidad3
+            if len(q3) >= 1:
+                imq13 = Image.open("./"+ colorname + "/" + str(int(float(q3))) +".png").convert("RGBA")
+                imq13 = imq13.resize((130,130))
+                dst.paste(imq13, (450, im1.height+100), imq13)
+
+            
             img = Image.new("RGBA", (800, 120), color="white")
             draw = ImageDraw.Draw(img)
             draw_point = (100, 0)
@@ -300,7 +342,31 @@ if resultado == True:
             dst.paste(im2, (im1.width+150, 100))
             dst.paste(im3, (150,im1.height+100))
             dst.paste(im4, (im1.width+150,im1.height+100))
+
+            #Agrego cantidad1
+            if len(q1) >= 1:
+                imq11 = Image.open("./"+ colorname + "/" + str(int(float(q1))) +".png").convert("RGBA")
+                imq11 = imq11.resize((100,100))
+                dst.paste(imq11, (300, 50), imq11)
+        
+            #Agrego cantidad2
+            if len(q2) >= 1:
+                imq12 = Image.open("./"+ colorname + "/" + str(int(float(q2))) +".png").convert("RGBA")
+                imq12 = imq12.resize((100,100))
+                dst.paste(imq12, (600, 50), imq12)
             
+            #Agrego cantidad3
+            if len(q3) >= 1:
+                imq13 = Image.open("./"+ colorname + "/" + str(int(float(q3))) +".png").convert("RGBA")
+                imq13 = imq13.resize((100,100))
+                dst.paste(imq13, (300, im1.height+100), imq13)
+        
+            #Agrego cantidad4
+            if len(q4) >= 1:
+                imq14 = Image.open("./"+ colorname + "/" + str(int(float(q4))) +".png").convert("RGBA")
+                imq14 = imq14.resize((100,100))
+                dst.paste(imq14, (600, im1.height+100), imq14)
+        
             img = Image.new("RGBA", (800, 120), color="white")
             draw = ImageDraw.Draw(img)
             draw_point = (150, 0)
