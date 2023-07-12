@@ -285,7 +285,7 @@ if resultado == True:
             if len(q2) >= 1:
                 imq12 = Image.open("./"+ colorname + "/" + str(int(float(q2))) +".png").convert("RGBA")
                 imq12 = imq12.resize((130,130))
-                dst.paste(imq12, (560, 50), imq12)
+                dst.paste(imq12, (550, 50), imq12)
         
         #Agrego cantidad3
             if len(q3) >= 1:
