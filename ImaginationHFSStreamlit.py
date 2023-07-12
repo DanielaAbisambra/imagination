@@ -291,7 +291,7 @@ if resultado == True:
             if len(q3) >= 1:
                 imq13 = Image.open("./"+ colorname + "/" + str(int(float(q3))) +".png").convert("RGBA")
                 imq13 = imq13.resize((130,130))
-                dst.paste(imq13, (400, im1.height+100), imq13)
+                dst.paste(imq13, (420, im1.height+100), imq13)
 
             
             img = Image.new("RGBA", (800, 120), color="white")
