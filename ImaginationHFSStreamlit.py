@@ -218,13 +218,13 @@ if resultado == True:
             if len(q1) >= 1:
                 imq11 = Image.open("./"+ colorname + "/" + str(int(float(q1))) +".png").convert("RGBA")
                 imq11 = imq11.resize((150,150))
-                dst.paste(imq11, (350, 50), imq11)
+                dst.paste(imq11, (300, 50), imq11)
             
             #Agrego cantidad2
             if len(q2) >= 1:
                 imq12 = Image.open("./"+ colorname + "/" + str(int(float(q2))) +".png").convert("RGBA")
                 imq12 = imq12.resize((150,150))
-                dst.paste(imq12, (650, 50), imq12)
+                dst.paste(imq12, (600, 50), imq12)
             
             img = Image.new("RGBA", (800, 120), color="white")
             draw = ImageDraw.Draw(img)
@@ -291,7 +291,7 @@ if resultado == True:
             if len(q3) >= 1:
                 imq13 = Image.open("./"+ colorname + "/" + str(int(float(q3))) +".png").convert("RGBA")
                 imq13 = imq13.resize((130,130))
-                dst.paste(imq13, (450, im1.height+100), imq13)
+                dst.paste(imq13, (420, im1.height+100), imq13)
 
             
             img = Image.new("RGBA", (800, 120), color="white")
