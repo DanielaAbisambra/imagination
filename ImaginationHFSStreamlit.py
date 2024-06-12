@@ -193,6 +193,10 @@ if resultado == True:
             for i in range(10):
                 if disc_ancho >= 800*0.9:
                     font = ImageFont.truetype("./arial.ttf",font.size*0.9)
+                    bbox = draw.textbbox((0, 0), disc , font=font)
+                    disc_ancho = bbox[2] - bbox[0]
+                    disc_alto = bbox[3] - bbox[1]
+
                 else:
                     break
             
@@ -258,6 +262,10 @@ if resultado == True:
             for i in range(10):
                 if disc_ancho >= 800*0.9:
                     font = ImageFont.truetype("./arial.ttf",font.size*0.9)
+                    bbox = draw.textbbox((0, 0), disc , font=font)
+                    disc_ancho = bbox[2] - bbox[0]
+                    disc_alto = bbox[3] - bbox[1]
+
                 else:
                     break
             
@@ -337,6 +345,10 @@ if resultado == True:
             for i in range(10):
                 if disc_ancho >= 800*0.9:
                     font = ImageFont.truetype("./arial.ttf",font.size*0.9)
+                    bbox = draw.textbbox((0, 0), disc , font=font)
+                    disc_ancho = bbox[2] - bbox[0]
+                    disc_alto = bbox[3] - bbox[1]
+
                 else:
                     break
             
@@ -427,6 +439,10 @@ if resultado == True:
             for i in range(10):
                 if disc_ancho >= 800*0.9:
                     font = ImageFont.truetype("./arial.ttf",font.size*0.9)
+                    bbox = draw.textbbox((0, 0), disc , font=font)
+                    disc_ancho = bbox[2] - bbox[0]
+                    disc_alto = bbox[3] - bbox[1]
+
                 else:
                     break
         
