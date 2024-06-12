@@ -186,6 +186,16 @@ if resultado == True:
             draw_point = (100, 0)
              
             font = ImageFont.truetype("./arial.ttf",15)
+            bbox = draw.textbbox((0, 0), disc , font=font)
+            disc_ancho = bbox[2] - bbox[0]
+            disc_alto = bbox[3] - bbox[1]
+
+            for i in range(10):
+                if disc_ancho >= 800*0.9:
+                    font = ImageFont.truetype("./arial.ttf",font.size*0.9)
+                else:
+                    break
+            
             draw.text(draw_point, disc, font=font, fill=grisclaro, align = 'center')
              
             text_window = imgdisc.getbbox()
@@ -241,6 +251,17 @@ if resultado == True:
             draw_point = (100, 0)
             
             font = ImageFont.truetype("./arial.ttf",15)
+            bbox = draw.textbbox((0, 0), disc , font=font)
+            disc_ancho = bbox[2] - bbox[0]
+            disc_alto = bbox[3] - bbox[1]
+
+            for i in range(10):
+                if disc_ancho >= 800*0.9:
+                    font = ImageFont.truetype("./arial.ttf",font.size*0.9)
+                else:
+                    break
+            
+            
             draw.text(draw_point, disc, font=font, fill= grisclaro, align = 'center')
             
             text_window = imgdisc.getbbox()
@@ -399,6 +420,16 @@ if resultado == True:
             draw_point = (100, 0)
         
             font = ImageFont.truetype("./arial.ttf",15)
+            bbox = draw.textbbox((0, 0), disc , font=font)
+            disc_ancho = bbox[2] - bbox[0]
+            disc_alto = bbox[3] - bbox[1]
+
+            for i in range(10):
+                if disc_ancho >= 800*0.9:
+                    font = ImageFont.truetype("./arial.ttf",font.size*0.9)
+                else:
+                    break
+        
             draw.text(draw_point, disc, font=font, fill=grisclaro, align = 'center')
             #draw.text(text= disc, font=font, fill=(50,50,50), align = 'center')
         
