@@ -309,6 +309,9 @@ if resultado == True:
             draw_point = (150, 0)
             
             font = ImageFont.truetype("./arial.ttf",15)
+            disc_ancho, disc_alto = draw.textsize(disc, font=font)
+            if disc_ancho >= 800*0.9:
+                font = ImageFont.truetype("./arial.ttf",font.size*0.9)
             draw.text(draw_point, disc, font=font, fill=grisclaro, align = 'center')
             
             text_window = imgdisc.getbbox()
